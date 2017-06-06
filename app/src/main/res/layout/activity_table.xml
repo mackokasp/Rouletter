@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="36dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/gamestate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="94dp"
+                android:layout_marginBottom="14dp"
+                android:layout_below="@drawable/logo"
+                android:text="Stan Gry:" />
+
+
+        <TextView
+            android:id="@+id/chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="94dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="122dp"
+            android:layout_toRightOf ="@+id/gamestate"
+            android:text="Stan Konta:" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/betnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Wybrany Numer"
+            android:layout_below="@+id/chips"
+            android:ems="7"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/betsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:hint="Rozmiar Zakładu"
+            android:layout_below="@+id/betnumber"
+            android:inputType="number" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_bet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zakład"
+            android:layout_alignBaseline="@+id/betsize"
+            android:layout_alignBottom="@+id/betsize"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="19dp" />
+    <TextView
+        android:id="@+id/betresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="94dp"
+        android:text="Wynik:"
+        android:layout_below="@+id/betnumber"/>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf ="@+id/betresult"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginLeft="24dp"
+            android:text="37"
+            android:layout_below="@+id/betnumber"/>
+
+    </RelativeLayout>
+</ScrollView>

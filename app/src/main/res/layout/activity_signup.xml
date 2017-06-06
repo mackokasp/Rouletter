@@ -25,56 +25,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="Imie" />
-        </android.support.design.widget.TextInputLayout>
-
-        <!-- Address Label -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPostalAddress"
-                android:hint="Email" />
-        </android.support.design.widget.TextInputLayout>
-
-
-
-        <!--  Email Label -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
             <EditText android:id="@+id/input_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
+                android:inputType="textPersonName"
                 android:hint="Login" />
         </android.support.design.widget.TextInputLayout>
 
 
-        <!-- mobile number -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_mobile"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="Telefon komorkowy" />
-        </android.support.design.widget.TextInputLayout>
-
-        <!-- Password Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,20 +45,48 @@
                 android:hint="Hasło"/>
         </android.support.design.widget.TextInputLayout>
 
-        <!-- Password Re-enter Label -->
+
+
+        <!--  Email Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_reEnterPassword"
+            <EditText android:id="@+id/input_ip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Powtórz hasło"/>
+                android:inputType="textEmailAddress"
+                android:hint="IP" />
         </android.support.design.widget.TextInputLayout>
 
-        <!-- Signup Button -->
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Port" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Zaloguj"/>
+
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_signup"
             android:layout_width="fill_parent"
@@ -109,14 +95,6 @@
             android:layout_marginBottom="24dp"
             android:padding="12dp"
             android:text="Stwórz konto"/>
-
-        <TextView android:id="@+id/link_login"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:text="Posiadasz już konto?  Login"
-            android:gravity="center"
-            android:textSize="16dip"/>
 
     </LinearLayout>
 </ScrollView>
